@@ -1,0 +1,30 @@
+
+import {useState} from "react";
+
+function App() {
+  const[letsSwap, setLetSwap] = useState(false);
+  const a = "Good Bye!"
+  const b = "Second elm"
+  const[sum, sum1] = useState(0)
+  const miniJSY = <h1 className='Colors'>"I'm groot"</h1>
+  const handleClick = () => {
+    setLetSwap((letsSwap) => b)
+  }
+  return (
+    <div className="App">
+      <header className="App-header">
+        <div>
+        <div>{letsSwap?b:miniJSY}</div>
+        <div>{}</div>
+          {a} Hello React;
+          <div>{miniJSY}{b}</div>
+          <div>{sum}</div>
+          <button onClick={() => sum1(sum + 1)}>+</button>
+          <button onClick={() => sum1(sum - 1)}>-</button>
+        </div>
+      </header>
+    </div>
+  );
+}
+
+export default App;
